@@ -8,7 +8,7 @@ import Question from "./Question"
 export default function PlayArea ({changeScore}) {
 
     // API
-    const url = `http://jservice.io/api/random`
+    const url = `https://jservice.io/api/random`
     
     // USE STATES
     const [question, setQuestion] = useState(null)
