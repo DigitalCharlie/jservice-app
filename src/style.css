@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#376d90;
+    font-family:monospace;
+    color:white;
+    text-align:center;
+    margin:0;
+}
+
+.app {
+    display:flex;
+    justify-content: center;
+    padding:50px;
+}
+
+main {
+    width:600px;
+    max-width:95%;
+}
+
+h1 {
+    font-size:3em;
+}
+
+h2 {
+    font-size:2em;
+}
+
+h3{
+    font-size:1.25em;
+}
+
+button {
+    width:150px;
+    height:35px;
+    border-radius:8px;
+    cursor: pointer;
+    transition:.25s;
+    margin:0 4px;
+}
+
+button:hover {
+    background-color:black;
+    color:white;
+}
+
+.lightblue {
+    background-color:rgb(89, 149, 187);
+    color:white;
+}
+
+.red {
+    background-color:rgb(206, 66, 66);
+    color:white;
+}
+
+.darkblue {
+    background-color:darkblue;
+    color:white;
+}
+
+.green {
+    background-color:green;
+    color:white;
+}
+
+.yellow {
+    color:yellow;
+    font-size:1.25em;
+}
+
+.reveal {
+    width:250px;
+    height:40px;
+    border-radius:10px;
+    font-weight:bold;
+}
