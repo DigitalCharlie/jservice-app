@@ -14,7 +14,7 @@ export default function Answer ({changeScore, scoredState, q, answerVisibilitySt
     const hiddenAnswer = () => {
         return (
             <div>
-                <button className="darkblue reveal" onClick={()=>setShowAnswer(true)}>Click to reveal Answer</button>
+                <button className="darkblue reveal" onClick={()=>setShowAnswer(true)}>Click to reveal question</button>
             </div>
         )
     }
@@ -22,7 +22,7 @@ export default function Answer ({changeScore, scoredState, q, answerVisibilitySt
     const revealedAnswer = () => {
         return (
             <div>
-                <h3><span className="yellow">Answer:</span> {answer}</h3>
+                <h3><span className="yellow">Question:</span> {answer}</h3>
                 <button className="green" onClick={()=> scoreAnswer(value, true)}>I got it right!</button>
                 <button className="red" onClick={()=> scoreAnswer(-value, false)}>I was wrong.</button>
             </div>
@@ -32,7 +32,7 @@ export default function Answer ({changeScore, scoredState, q, answerVisibilitySt
     const completedScoring = () => {
         return (
             <div>
-                <h3><span className="yellow">Answer:</span> {answer}</h3>
+                <h3><span className="yellow">Question:</span> {answer}</h3>
                 { result === true ? <p>Great job!</p> : <p>You'll get the next one.</p> }
                 <button className="lightblue"onClick={getQuestion}>Next question</button>
             </div>
