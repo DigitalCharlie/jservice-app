@@ -37,7 +37,7 @@ export default function PlayArea ({changeScore}) {
         return (
             <section>
                 <h2>Let's Play!</h2>
-                <button className="lightblue" onClick={getQuestion}>Get Question</button>
+                <button className="lightblue" onClick={getQuestion}>Get New Answer</button>
                 <Question q={question} />
                 <Answer changeScore={changeScore} scoredState={{scored, setScored}} q={question} answerVisibilityState={{showAnswer, setShowAnswer}} resultState={{result, setResult}} getQuestion={getQuestion} />
             </section>

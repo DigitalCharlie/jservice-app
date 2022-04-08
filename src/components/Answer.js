@@ -34,7 +34,7 @@ export default function Answer ({changeScore, scoredState, q, answerVisibilitySt
             <div>
                 <h3><span className="yellow">Question:</span> {answer}</h3>
                 { result === true ? <p>Great job!</p> : <p>You'll get the next one.</p> }
-                <button className="lightblue"onClick={getQuestion}>Next question</button>
+                <button className="lightblue"onClick={getQuestion}>Next answer</button>
             </div>
         )
     }
